@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#FDF5E6">
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="280dp"
+        android:padding="15dp">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/trace_dialog_sdv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            fresco:actualImageScaleType="focusCrop"
+            fresco:placeholderImage="@mipmap/icon_progress"
+            fresco:placeholderImageScaleType="fitCenter"/>
+    </LinearLayout>
+
+    <!-- TODO: 开始时间 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="开始巡检时间："
+            style="@style/Bold16spCenterDark"
+            />
+        <TextView
+            android:id="@+id/trace_dialog_start"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="00 : 00 : 00"
+            style="@style/Bold16spCenterDark" />
+    </LinearLayout>
+    <!-- TODO: 总共巡检了 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="共巡检："
+            style="@style/Bold16spCenterDark" />
+        <TextView
+            android:id="@+id/trace_dialog_real"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="00 : 00 : 00"
+            style="@style/Bold16spCenterDark" />
+    </LinearLayout>
+    <!-- TODO: 巡检日期 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="巡检日期："
+            style="@style/Bold16spCenterDark"/>
+        <TextView
+            android:id="@+id/trace_dialog_date"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="0000-00-00"
+            style="@style/Bold16spCenterDark" />
+    </LinearLayout>
+
+
+</LinearLayout>

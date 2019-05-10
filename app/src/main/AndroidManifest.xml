@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zzzealous.seekme">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    //获取设备网络状态，禁用后无法获取网络状态
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    //GPS
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    //wifi
+    <uses-permission android:name="android.permission.INTERNET" />
+    //网络权限，当禁用后，无法进行检索等相关业务
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    //读取设备硬件信息，统计数据
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    //读取系统信息，包含系统版本等信息，用作统计
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    //获取设备的网络状态，鉴权所需网络代理
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    //允许sd卡写权限，需写入地图数据，禁用后无法显示地图
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    //获取统计数据
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    //鉴权所需该权限获取进程列表
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    //使用步行AR导航，配置Camera权限
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- iBeancon功能所需权限 -->
+    ;
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- 个推3.0电子围栏功能所需权限 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 浮动通知权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:persistent="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/NoActionbar">
+        <activity android:name=".Activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="5iDj9O3tHaqGpRboN27awQII7tMhsxG5" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".Activity.LoginActivity" />
+        <activity
+            android:name=".Activity.MyRecord.TraceRecordActivity"
+            android:hardwareAccelerated="false" />
+        <activity
+            android:name=".Activity.MyMemberRecord.MyMemberTActivity"
+            android:hardwareAccelerated="false" />
+        <activity
+            android:name=".Activity.MyMemberRecord.MemberTraceActivity"
+            android:hardwareAccelerated="false" />
+
+        <service
+            android:name=".GTPush.DemoPushService"
+            android:exported="true"
+            android:label="PushService"
+            android:process=":pushservice" />
+        <service
+            android:name=".GTPush.SeekMeIntentService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".GTPush.GeTuiPushReceiver"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver android:name=".Broadcast.NetBroadCastReciver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".Activity.MyMemberRecord.MyMemberHActivity" />
+        <activity android:name=".Activity.MyMemberRecord.MemberHelpActivity" />
+        <activity android:name=".Activity.MyRecord.SeekRecordActivity" />
+        <activity android:name=".Activity.MyRecord.HelpRecordActivity" />
+        <activity android:name=".Activity.Mine.CacheClearingActivity" />
+        <activity android:name=".Activity.Mine.MineMineActivity" />
+        <activity android:name=".Activity.Mine.ChangePasswordActivity" />
+        <activity android:name=".Activity.Mine.ChooseNewVioceAcitivity" />
+        <activity android:name=".Activity.Mine.EmailActivity" />
+        <activity android:name=".Activity.Mine.EmergencyContantActivity" />
+        <activity android:name=".Activity.Mine.LoginOutActivity" />
+        <activity
+            android:name=".Activity.Mine.MineAddressActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity android:name=".Activity.Mine.MineCollectionActivity" />
+        <activity android:name=".Activity.Mine.MineCompanyActivity" />
+        <activity android:name=".Activity.Mine.MineSettingActivity" />
+        <activity android:name=".Activity.Mine.MineHelpingAcitivity" />
+        <activity android:name=".Activity.News.Article.WorkArticleActivity" />
+        <activity android:name=".Activity.News.Article.StudyArticleActivity" />
+        <activity android:name=".Activity.News.Article.LifeArticleActivity" />
+        <activity android:name=".Activity.News.Notify.NoticeActivity" />
+        <activity android:name=".Activity.News.Notify.SelectActivity" />
+        <activity android:name=".Activity.News.Notify.VoteActivity" />
+        <activity android:name=".Activity.News.Notify.CreateNoticeActivity" />
+        <activity android:name=".Activity.News.Notify.NoticeDetailActivity" />
+        <activity android:name=".Activity.News.Article.ArticleDetailActivity" />
+        <activity android:name=".Activity.Mine.ElectActivity" />
+        <activity android:name=".Activity.News.Notify.NewVoteActivity" />
+        <activity android:name=".Activity.News.Article.SelectActivity" />
+        <activity android:name=".Activity.Chat.ChatMessageActivity"></activity>
+    </application>
+
+</manifest>

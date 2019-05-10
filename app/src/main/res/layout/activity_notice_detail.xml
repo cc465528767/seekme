@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/BottomBarColor" >
+        <Button
+            android:id="@+id/notice_detail_backbtn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:background="@mipmap/arrow_left"
+            />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="通知详情"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="10dp">
+        <TextView
+            android:id="@+id/notice_detail_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            style="@style/Bold24spCenterDark"
+            android:text=""/>
+    </LinearLayout>
+
+    <View style="@style/gray_line_1dp"/>
+    <View style="@style/white_line_8dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:paddingLeft="10dp">
+        <TextView
+            android:id="@+id/notice_detail_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            style="@style/NoBold16spDark"
+            android:text=""/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:gravity="right"
+        android:orientation="horizontal">
+        <TextView
+
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+
+            style="@style/NoBold16spDark"
+            android:text="时间："/>
+        <TextView
+            android:id="@+id/notice_detail_day"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            style="@style/NoBold16spDark"
+            android:text=""/>
+        <TextView
+            android:id="@+id/notice_detail_time"
+            android:layout_width="90dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            style="@style/NoBold16spDark"
+            android:text=""/>
+    </LinearLayout>
+    <View style="@style/gray_line_1dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:paddingLeft="10dp"
+        android:gravity="right|bottom"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                style="@style/NoBold16spDark"
+                android:text="发送人："/>
+            <TextView
+                android:id="@+id/notice_detail_name"
+                android:layout_width="140dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                style="@style/NoBold16spDark"
+                android:text=""/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                style="@style/NoBold16spDark"
+                android:text="发送时间："/>
+            <TextView
+                android:id="@+id/notice_detail_sendday"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                style="@style/NoBold16spDark"
+                android:text=""/>
+            <TextView
+                android:id="@+id/notice_detail_sendtime"
+                android:layout_width="70dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                style="@style/NoBold16spDark"
+                android:text=""/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

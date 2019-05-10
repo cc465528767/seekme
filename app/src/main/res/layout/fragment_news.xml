@@ -1,0 +1,305 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/b6">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="学习园地"
+            android:textSize="15dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/DarkTextColor"/>
+    </RelativeLayout>
+
+    <!--TODO: 工作发文 -->
+    <LinearLayout
+        android:id="@+id/showMyWork"
+        style="@style/OptionArray">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/b7">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:padding="10dp"
+                android:src="@drawable/news" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="工作发文"
+                android:textColor="@color/DarkTextColor"
+                android:textSize="15dp" />
+
+            <RelativeLayout
+                android:id="@+id/lala"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                >
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:padding="10dp"
+                    android:src="@mipmap/arrow_right" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--TODO: 学习交流 -->
+    <LinearLayout
+        android:id="@+id/showMyStudy"
+        style="@style/OptionArray">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/b7">
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:padding="10dp"
+                android:src="@drawable/cloud" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="学习交流"
+                android:textSize="15dp" android:textColor="@color/DarkTextColor"
+                />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:padding="10dp"
+                    android:src="@mipmap/arrow_right" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--TODO: 生活资讯 -->
+    <LinearLayout
+        android:id="@+id/showMyLife"
+        style="@style/OptionArray">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/b7">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:padding="10dp"
+                android:src="@drawable/edit" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center_vertical"
+                android:text="生活资讯"
+                android:textSize="15dp"
+                android:textColor="@color/DarkTextColor"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/MainTextColor"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:padding="10dp"
+                    android:src="@mipmap/arrow_right" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+<!--    <View style="@style/white_line_8dp"/>
+    <View style="@style/gray_line_1dp"/>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="通知"
+            android:textSize="15dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/DarkTextColor"/>
+    </RelativeLayout>
+
+    <!--TODO: 通知 -->
+    <LinearLayout
+        android:id="@+id/tongzhi"
+        style="@style/OptionArray">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/b7">
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:padding="10dp"
+                android:src="@drawable/notification_bell" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center_vertical"
+                android:text="通知"
+                android:textSize="15dp"
+                android:textColor="@color/DarkTextColor"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:padding="10dp"
+                    android:src="@mipmap/arrow_right" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--TODO: 评选 -->
+   <!-- <LinearLayout
+        android:id="@+id/pingxuan"
+        style="@style/OptionArray"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/b7"
+           >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:text="评选"
+                android:textSize="15dp"
+                android:textColor="@color/DarkTextColor"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/MainTextColor"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:padding="10dp"
+                    android:src="@mipmap/arrow_right" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    &lt;!&ndash;TODO: 投票 &ndash;&gt;
+    <LinearLayout
+        android:id="@+id/toupiao"
+        style="@style/OptionArray">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/b7">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:text="投票"
+                android:textSize="15dp"
+                android:textColor="@color/DarkTextColor"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/MainTextColor"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:padding="10dp"
+                    android:src="@mipmap/arrow_right" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>-->
+
+
+</LinearLayout>

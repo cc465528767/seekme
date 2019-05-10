@@ -1,0 +1,295 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/chineseb</item>
+    </style>
+
+    <!--取消 actionbar 的显示-->
+    <style name="NoActionbar" parent="Theme.AppCompat.Light.NoActionBar"></style>
+
+    <!--对于底边tab的设置-->
+    <style name="activity_main_bottom">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <!-- 一些文本大小的style设置 -->
+
+    <style name="base_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!--底边文字大小-->
+    <style name="bottom_text" parent="base_text">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="register_edit_text_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">24dp</item>
+        <item name="android:layout_marginRight">24dp</item>
+        <item name="android:layout_marginTop">24dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <!-- 设置功能行标准style  -->
+    <style name="OptionArray">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+
+
+    <!-- 一些布局中 间隔用的白条 -->
+    <style name="white_line_1dp">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+
+    <style name="white_line_8dp">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">8dp</item>
+    </style>
+
+    <style name="white_line_25dp">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">25dp</item>
+    </style>
+
+    <!--  灰色条 -->
+
+    <style name="gray_line_1dp">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">#97989C</item>
+    </style>
+
+    <style name="gray_line_3dp">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">3dp</item>
+        <item name="android:background">#97989C</item>
+    </style>
+
+
+    <!-- 一些布局中 间隔用的粉条 -->
+    <style name="pink_line_8dp">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">8dp</item>
+        <item name="android:background">#FFC0CB</item>
+    </style>
+
+
+    <style name="pink_line_25dp">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:background">#FFC0CB</item>
+    </style>
+
+    <!--TODO 自定义Dialog-->
+    <style name="MyDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="CenterDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item><!-- 背景透明 -->
+        <item name="android:windowAnimationStyle">@android:style/Theme.InputMethod</item>
+    </style>
+
+    <!-- TODO 16sp 粗体 居中 深色字体-->
+    <style name="Bold16spCenterDark">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/DarkTextColor</item>
+    </style>
+    <!-- TODO 16sp 粗体 深色字体-->
+    <style name="Bold16spDark">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/DarkTextColor</item>
+    </style>
+
+    <!-- TODO 14sp 粗体 深色字体-->
+    <style name="Bold14spDark">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/DarkTextColor</item>
+    </style>
+
+
+    <!-- TODO 16sp 粗体 居中 深色字体-->
+    <style name="NoBold16spDarkCenter">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/DarkTextColor</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- TODO 16sp  深色字体-->
+    <style name="NoBold16spDark">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/DarkTextColor</item>
+    </style>
+    <!-- TODO 18sp 粗体 居中 深色字体-->
+    <style name="Bold18spCenterDark">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/DarkTextColor</item>
+    </style>
+
+    <!-- TODO 18sp 粗体 居中 深色字体-->
+    <style name="Bold24spCenterDark">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/DarkTextColor</item>
+    </style>
+
+
+    <!-- TODO InvoQiu设计的style  -->
+    <style name="gray_line_40dp">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">#97989C</item>
+    </style>
+
+    <style name="white_line_50dp">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">25dp</item>
+    </style>
+    <!-- “我主界面中‘选项’文字的样式”-->
+
+    <!-- 设置功能行标准style  -->
+    <style name="OptionArray1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">46dp</item>
+        <item name="android:background">@color/b7</item>
+        <item name="android:padding">8dp</item>
+    </style>
+    <style name="OptionArray2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:background">@color/b7</item>
+        <item name="android:padding">8dp</item>
+    </style>
+    <style name="OptionArray_TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:textColor">@color/DarkTextColor</item>
+       <!-- <item name="android:fontFamily">@font/fonts</item>-->
+        <item name="android:textSize">15dp</item>
+    </style>
+    <!-- 选项左边是较大图标或图片的样式-->
+    <style name="OptionArray_BigImage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">120dp</item>
+        <item name="android:background">@color/OptionColor</item>
+        <item name="android:padding">8dp</item>
+    </style>
+    <!--选项中图像大小的样式 100dp-->
+    <style name="OptionArray_BigImage.Image">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+    </style>
+    <!--“我 个人信息 左文字 右图标的样式”-->
+
+    <style name="OptionArray_selfinformation">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@color/b7</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="OptionArray_selfinformation.Image">
+        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_width">45dp</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+    </style>
+    <!-- 左对齐居中30dp选项-->
+    <style name="leftcenter">
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:textColor">@color/DarkTextColor</item>
+    </style>
+    <!-- 右对齐居中30dp选项-->
+    <style name="rightcenter">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:paddingRight">30dp</item>
+        <item name="android:textColor">@color/DarkTextColor</item>
+    </style>
+
+    <!--存在单选选项的OptionArray的单选样式  向右距离30dp-->
+    <style name="Radiobutton_Right">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:paddingRight">30dp</item>
+    </style>
+
+    <!--<style name="Title_Mine">-->
+        <!--<item name="android:layout_height">50dp</item>-->
+        <!--<item name="android:layout_width">match_parent</item>-->
+        <!--<item name="android:background">@color/BottomBarColor</item>-->
+    <!--</style>-->
+
+    <!--<style name="Title_Mine.Text">-->
+        <!--<item name="android:layout_width">match_parent</item>-->
+        <!--<item name="android:layout_height">match_parent</item>-->
+        <!--<item name="android:layout_alignParentStart">true</item>-->
+        <!--<item name="android:layout_alignParentTop">true</item>-->
+        <!--<item name="android:gravity">center</item>-->
+        <!--<item name="android:textSize">25dp</item>-->
+        <!--<item name="android:textStyle">bold</item>-->
+    <!--</style>-->
+    <style name="Title_Mine">
+        <item name="android:background">@color/BottomBarColor</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+    <style name="Title_Mine.Text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="NoActionbar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="NoActionbar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

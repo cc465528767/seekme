@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/free_dialog_bg"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="15dp" >
+
+        <TextView
+            android:id="@+id/tvAlertDialogTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="#000"
+            android:textSize="21dp"
+            android:text="Title" />
+
+        <TextView
+            android:id="@+id/tvAlertDialogMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:layout_margin="15dp"
+            android:textSize="16dp"
+            android:gravity="left|top"
+            android:text=""/>
+    </LinearLayout>
+
+    <View style="@style/white_line_1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAlertDialogPositive"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_item_to_alpha"
+            android:padding="15dp"
+            android:text="确定"
+            android:textSize="16dp"
+            android:textColor="#000"
+            />
+
+
+        <Button
+            android:id="@+id/btnAlertDialogNegative"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_item_to_alpha"
+            android:padding="15dp"
+            android:text="取消"
+            android:textSize="16dp"
+            android:textColor="#000"
+            android:visibility="visible"
+            />
+    </LinearLayout>
+
+</LinearLayout>

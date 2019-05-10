@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="beforeDescendants">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:descendantFocusability="afterDescendants">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="#FFFFFFFF">
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/sos_iv"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                fresco:actualImageScaleType="focusCrop"
+                fresco:placeholderImage="@mipmap/member_icon"
+                fresco:placeholderImageScaleType="fitCenter" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:paddingBottom="3dp"
+            android:paddingRight="3dp"
+            android:orientation="vertical"
+            android:background="#FFFFFFFF"
+            android:weightSum="2">
+            <!-- TODO  开始日期-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    style="@style/Bold16spCenterDark"
+                    android:text="日期"/>
+                <TextView
+                    android:id="@+id/sos_record_date"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    style="@style/Bold16spCenterDark"
+                    />
+
+            </LinearLayout>
+
+            <!-- TODO  开始时间-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    style="@style/Bold16spCenterDark"
+                    android:text="开始时间"/>
+                <TextView
+                    android:id="@+id/sos_record_starttime"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    style="@style/Bold16spCenterDark"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

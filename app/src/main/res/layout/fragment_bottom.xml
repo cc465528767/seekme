@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_alignParentBottom="true"
+    android:background="@color/BottomBarColor">
+
+    <LinearLayout
+        android:id="@+id/tab_main"
+        style="@style/activity_main_bottom">
+
+        <ImageView
+            android:id="@+id/btn_main"
+            android:layout_width="@dimen/activity_main_bottom_image_height"
+            android:layout_height="@dimen/activity_main_bottom_image_height"
+            android:layout_marginTop="5dp"
+            android:src="@mipmap/main_selected" />
+
+        <TextView
+            style="@style/bottom_text"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/Black"
+            android:text="首页" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/tab_chat"
+        style="@style/activity_main_bottom">
+
+        <ImageView
+            android:id="@+id/btn_chat"
+            android:layout_width="@dimen/activity_main_bottom_image_height"
+            android:layout_height="@dimen/activity_main_bottom_image_height"
+            android:layout_marginTop="5dp"
+            android:src="@mipmap/chat_unselected" />
+
+        <TextView
+            style="@style/bottom_text"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/Black"
+            android:text="消息" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tab_work"
+        style="@style/activity_main_bottom">
+
+        <ImageView
+            android:id="@+id/btn_work"
+            android:layout_width="@dimen/activity_main_bottom_image_height"
+            android:layout_height="@dimen/activity_main_bottom_image_height"
+            android:layout_marginTop="5dp"
+            android:src="@mipmap/work_unselected" />
+
+        <TextView
+            style="@style/bottom_text"
+            android:layout_marginTop="3dp"
+
+            android:textColor="@color/Black"
+            android:text="运维" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tab_news"
+        style="@style/activity_main_bottom">
+
+        <ImageView
+            android:id="@+id/btn_news"
+            android:layout_width="@dimen/activity_main_bottom_image_height"
+            android:layout_height="@dimen/activity_main_bottom_image_height"
+            android:layout_marginTop="5dp"
+            android:src="@mipmap/news_unselected" />
+
+        <TextView
+            style="@style/bottom_text"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/Black"
+            android:text="发现" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/tab_mine"
+        style="@style/activity_main_bottom">
+
+        <ImageView
+            android:id="@+id/btn_mine"
+            android:layout_width="@dimen/activity_main_bottom_image_height"
+            android:layout_height="@dimen/activity_main_bottom_image_height"
+            android:layout_marginTop="5dp"
+            android:src="@mipmap/mine_unselected" />
+
+        <TextView
+            style="@style/bottom_text"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/Black"
+            android:text="我的" />
+    </LinearLayout>
+
+
+</LinearLayout>

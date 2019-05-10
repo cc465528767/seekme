@@ -1,0 +1,123 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#FDF5E6">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:text="紧急救援"
+        android:textSize="25dp"
+        android:textColor="@color/DarkTextColor"/>
+
+    <!-- TODO 个人信息-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <!-- TODO 姓名-->
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="40dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="您的同事："
+                style="@style/NoBold16spDark"/>
+           <TextView
+               android:id="@+id/SosDialogName"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               style="@style/NoBold16spDark"
+               android:text="..."/>
+       </LinearLayout>
+
+        <!-- TODO 电话-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="电话："
+                style="@style/NoBold16spDark"/>
+            <TextView
+                android:id="@+id/SosDialogPhone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/NoBold16spDark"
+                android:text="..."/>
+        </LinearLayout>
+
+        <!-- TODO 工号-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="工号："
+                style="@style/NoBold16spDark"/>
+
+            <TextView
+                android:id="@+id/SosDialogJobNum"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/NoBold16spDark"
+                android:text="..."/>
+        </LinearLayout>
+
+        <!-- TODO -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="正在发起紧急救援"
+            style="@style/NoBold16spDark"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:text="是否接受？"
+            style="@style/NoBold16spDark"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSosDialogPositive"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_item_to_alpha"
+            android:padding="15dp"
+            android:text="确定"
+            android:textSize="16dp"
+            android:textColor="#000"
+            />
+
+
+        <Button
+            android:id="@+id/btnSosDialogNegative"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_item_to_alpha"
+            android:padding="15dp"
+            android:text="取消"
+            android:textSize="16dp"
+            android:textColor="#000"
+            android:visibility="visible"
+            />
+    </LinearLayout>
+</LinearLayout>

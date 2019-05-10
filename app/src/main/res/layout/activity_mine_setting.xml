@@ -1,0 +1,228 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        style="@style/Title_Mine">
+        <TextView
+            style="@style/Title_Mine.Text"
+            android:text="设置"/>
+    </LinearLayout>
+
+
+
+    <View style="@style/white_line_1dp" />
+    <View style="@style/gray_line_3dp" />
+
+    <!-- TODO:单选 定位 -->
+    <LinearLayout style="@style/OptionArray1">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/OptionArray_TextView"
+                android:layout_marginLeft="15dp"
+                android:text="定位" />
+
+
+            <RadioButton
+                android:id="@+id/Button_Location"
+                style="@style/Radiobutton_Right"
+                android:checked="true"/>
+
+            <!--<RadioButton-->
+                <!--android:id="@+id/Button_Location"-->
+                <!--style="@style/Radiobutton_Right"-->
+                <!--android:checked="true" />-->
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- 灰布提示语句-->
+    <LinearLayout
+        style="@style/gray_line_40dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:text="开启后将允许后台跟踪实时位置信息，工作时请保证开启" />
+    </LinearLayout>
+
+    <View style="@style/gray_line_1dp" />
+
+    <View style="@style/white_line_8dp" />
+
+    <View style="@style/gray_line_1dp" />
+
+    <!--TODO:单选 显示新消息 -->
+    <LinearLayout style="@style/OptionArray_selfinformation">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/OptionArray_TextView"
+                android:layout_marginLeft="15dp"
+                android:text="显示新消息详细信息" />
+
+            <RadioButton
+            android:id="@+id/Button_ShowMessage"
+            style="@style/Radiobutton_Right"
+            android:checked="true" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View style="@style/gray_line_1dp" />
+
+    <View style="@style/white_line_8dp" />
+
+    <View style="@style/gray_line_1dp" />
+
+    <!--TODO:单选 声音 -->
+    <LinearLayout style="@style/OptionArray_selfinformation">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/OptionArray_TextView"
+                android:layout_marginLeft="15dp"
+                android:text="声音" />
+
+            <RadioButton
+                android:id="@+id/Button_Voice"
+                style="@style/Radiobutton_Right"
+                android:checked="true" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View style="@style/gray_line_1dp" />
+
+    <View style="@style/white_line_8dp" />
+
+    <View style="@style/gray_line_1dp" />
+
+    <!--TODO:声音选项 -->
+    <LinearLayout style="@style/OptionArray1"
+        android:id="@+id/NewVoice">
+
+        <TextView
+            style="@style/OptionArray_TextView"
+            android:layout_marginLeft="15dp"
+            android:text="新消息提示音" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="25dp"
+                android:padding="10dp"
+                android:src="@mipmap/arrow_right" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View style="@style/gray_line_1dp" />
+
+    <View style="@style/white_line_8dp" />
+
+    <View style="@style/gray_line_1dp" />
+
+    <!--TODO:单选 震动 -->
+    <LinearLayout style="@style/OptionArray_selfinformation">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/OptionArray_TextView"
+                android:layout_marginLeft="15dp"
+                android:text="震动" />
+
+            <RadioButton
+                android:id="@+id/Button_Shake"
+                style="@style/Radiobutton_Right"
+                android:checked="true" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View style="@style/gray_line_1dp" />
+
+    <View style="@style/white_line_8dp" />
+
+    <View style="@style/gray_line_1dp" />
+
+    <!--TODO:修改密码 -->
+    <LinearLayout style="@style/OptionArray2"
+        android:id="@+id/ChangePassword">
+
+        <TextView
+            style="@style/OptionArray_TextView"
+            android:layout_marginLeft="15dp"
+            android:text="修改密码" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="25dp"
+                android:padding="10dp"
+                android:src="@mipmap/arrow_right" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View style="@style/gray_line_1dp" />
+
+    <View style="@style/white_line_25dp" />
+
+    <View style="@style/gray_line_1dp" />
+
+    <!--TODO:清除缓存数据 -->
+    <LinearLayout style="@style/OptionArray2"
+        android:id="@+id/Cachecleanning">
+
+        <TextView
+            style="@style/OptionArray_TextView"
+            android:layout_marginLeft="15dp"
+            android:text="清除缓存数据" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="25dp"
+                android:padding="10dp"
+                android:src="@mipmap/arrow_right" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View style="@style/gray_line_1dp" />
+</LinearLayout>

@@ -1,0 +1,330 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:setTypeface="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/b6">
+
+<!--
+    <View style="@style/white_line_1dp" />-->
+
+    <!--<View style="@style/gray_line_1dp" />-->
+    <!--<LinearLayout-->
+    <!--style="@style/Title_Mine">-->
+    <!--<TextView-->
+    <!--style="@style/Title_Mine.Text"-->
+    <!--android:text="我"/>-->
+    <!--</LinearLayout>-->
+    <!--<View style="@style/gray_line_1dp" />-->
+
+
+    <View style="@style/gray_line_1dp" />
+
+    <!--TODO: 个人信息 -->
+    <LinearLayout
+        android:id="@+id/mine"
+        style="@style/OptionArray1">
+
+        <ImageView
+            android:layout_width="@dimen/activity_main_bottom_image_height"
+            android:layout_height="@dimen/activity_main_bottom_image_height"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/setting_alt" />
+
+        <TextView
+            style="@style/OptionArray_TextView"
+            android:text="个人信息"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/MainTextColor"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"
+                android:src="@mipmap/arrow_right" />
+        </RelativeLayout>
+    </LinearLayout>
+
+  <!--  <View style="@style/gray_line_1dp" />-->
+
+    <View style="@style/white_line_8dp" />
+
+   <!-- <View style="@style/gray_line_1dp" />-->
+
+
+    <!--TODO: 公司 -->
+    <LinearLayout
+        android:id="@+id/mine_company"
+        style="@style/OptionArray1">
+
+        <ImageView
+            android:layout_width="@dimen/activity_main_bottom_image_height"
+            android:layout_height="@dimen/activity_main_bottom_image_height"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/store" />
+
+        <TextView
+            style="@style/OptionArray_TextView"
+            android:text="公司"
+          />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/MainTextColor"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"
+                android:src="@mipmap/arrow_right" />
+        </RelativeLayout>
+    </LinearLayout>
+
+   <!-- <View style="@style/gray_line_1dp" />-->
+
+    <View style="@style/white_line_8dp" />
+
+   <!-- <View style="@style/gray_line_1dp" />-->
+
+
+    <!--TODO: 设置 -->
+    <LinearLayout
+        android:id="@+id/mine_setting"
+        style="@style/OptionArray1">
+
+        <ImageView
+            android:layout_width="@dimen/activity_main_bottom_image_height"
+            android:layout_height="@dimen/activity_main_bottom_image_height"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/settings"/>
+
+        <TextView
+            style="@style/OptionArray_TextView"
+            android:text="设置"
+           />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/MainTextColor"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"
+                android:src="@mipmap/arrow_right" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--<View style="@style/gray_line_1dp" />-->
+
+    <View style="@style/white_line_8dp" />
+
+   <!-- <View style="@style/gray_line_1dp" />-->
+
+
+    <!--TODO: 通讯录 -->
+    <LinearLayout
+        android:id="@+id/mine_addressbook"
+        style="@style/OptionArray1">
+
+        <ImageView
+            android:layout_width="@dimen/activity_main_bottom_image_height"
+            android:layout_height="@dimen/activity_main_bottom_image_height"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/folder" />
+
+        <TextView
+            style="@style/OptionArray_TextView"
+            android:text="通讯录"
+        />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/MainTextColor"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"
+                android:src="@mipmap/arrow_right" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--<View style="@style/gray_line_1dp" />-->
+
+    <View style="@style/white_line_8dp" />
+
+    <!--<View style="@style/gray_line_1dp" />-->
+
+
+    <!--TODO: 收藏 -->
+    <!--<LinearLayout
+        android:id="@+id/mine_collection"
+        style="@style/OptionArray1">
+
+        <ImageView
+            android:layout_width="@dimen/activity_main_bottom_image_height"
+            android:layout_height="@dimen/activity_main_bottom_image_height"
+            android:layout_marginTop="3dp"
+            android:src="@mipmap/work_unselected" />
+
+        <TextView
+            style="@style/OptionArray_TextView"
+            android:text="收藏"
+
+        />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/MainTextColor"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"
+                android:src="@mipmap/arrow_right" />
+        </RelativeLayout>
+    </LinearLayout>-->
+
+    <!--<View style="@style/gray_line_1dp" />-->
+
+    <!--<View style="@style/white_line_8dp" />-->
+
+   <!-- <View style="@style/gray_line_1dp" />-->
+
+
+    <!--TODO: 帮助 -->
+    <LinearLayout
+        android:id="@+id/mine_helping"
+        style="@style/OptionArray1">
+
+        <ImageView
+            android:layout_width="@dimen/activity_main_bottom_image_height"
+            android:layout_height="@dimen/activity_main_bottom_image_height"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/star" />
+
+        <TextView
+
+            style="@style/OptionArray_TextView"
+            android:text="帮助"
+             />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/MainTextColor"
+                android:textSize="20dp"
+                />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"
+                android:src="@mipmap/arrow_right" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View style="@style/gray_line_1dp" />
+
+    <View style="@style/white_line_8dp" />
+
+    <!--<View style="@style/gray_line_1dp" />-->
+
+
+    <!-- 投票评选 制作在这   2018.7.4-->
+
+    <!-- 投票评选 end-->
+
+<!--    <TextView
+        android:id="@+id/Show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />-->
+
+
+    <!--<View style="@style/gray_line_1dp" />-->
+
+    <View style="@style/white_line_50dp" />
+
+<!--    <View style="@style/gray_line_1dp" />-->
+
+    <!-- TODO:退出登陆 -->
+    <LinearLayout
+        android:id="@+id/mine_lognout"
+        style="@style/OptionArray1"
+        android:layout_height="50dp"
+        android:baselineAligned="false"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="退出登录"
+            android:textSize="15dp"
+            android:textColor="@color/DarkTextColor"
+
+
+        />
+
+    </LinearLayout>
+
+    <View style="@style/gray_line_1dp" />
+</LinearLayout>

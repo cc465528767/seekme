@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ArrowItemView">
+        <attr name="arrowContent" format="string"/>
+        <attr name="arrowLabel" format="reference"/>
+        <attr name="arrowHeight" format="dimension"/>
+        <attr name="arrowLabelVisible" format="boolean"/>
+        <attr name="arrowIvRightVisible" format="boolean"/>
+        <attr name="arrowTvRightVisible" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="SideBar">
+        <attr name="scaleSize" format="integer"/>
+        <attr name="scaleItemCount" format="integer"/>
+        <attr name="scaleWidth" format="dimension"/>
+    </declare-styleable>
+</resources>
